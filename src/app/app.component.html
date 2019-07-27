@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  <button color="white" mat-button [matMenuTriggerFor]="menu">MENU</button>
+  <h1>{{ title }}!</h1>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/lizzo-concerts">SEE LIZZO</button>
+    <button mat-menu-item routerLink="/lizzo-social">FIND LIZZO</button>
+  </mat-menu>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
